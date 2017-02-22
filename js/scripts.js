@@ -6,8 +6,11 @@ var pigLatin = function(sentence) {
     for (var j = 0; j < vowels.length; j++){
     if (sentence[i] === "a" || sentence[i] === "i") {
       return sentence.concat("ay");
-    }else if (sentence[i] !== vowels[j]) {
-      return sentence.replace(sentence[i],'').concat(sentence[i] + "ay");}
+    }else if ((sentence.charAt(0) !== vowels[j])&&(sentence.charAt(1) !== vowels[j])) {
+      return sentence.replace(sentence.charAt(0),'').replace(sentence.charAt(1),'').concat(sentence.charAt(0)).concat(sentence.charAt(1)) + "ay";
+    }else if ((sentence[i]) !== vowels[j]) {
+      return sentence.replace(sentence[i],'').concat(sentence[i] + "ay");
+    }
     // }else if (sentence[i] === vowels[j]){
     //   return sentence.concat("ay");
     // }
