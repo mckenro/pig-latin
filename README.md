@@ -52,10 +52,11 @@ Copyright (c) 2017 **_{List of contributors or company name}_**
 * _The program moves a consonant to the end of the word and adds "ay" to multi-letter words beginning with a consonant._
     * _Example Input: laugh_
     * _Example Output: aughlay_
-    
+
 * _The program moves consecutive consonants to the end of the word and adds "ay" to multi-letter words beginning with consecutive consonants._
     * _Example Input: trip_
     * _Example Output: iptray_
+    
 * _The program moves consecutive consonants and 'qu' and adds "ay" to multi-letter words beginning with consecutive consonants that include 'qu'._
     * _Example Input: squeal_
     * _Example Output: ealsquay_
